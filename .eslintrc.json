@@ -25,5 +25,15 @@
     "plugin:prettier/recommended",
     "plugin:json/recommended",
     "adjunct"
-  ]
+  ],
+  "rules": {
+    // Flow-based functional syntax is impossible to read.
+    "lodash-fp/no-chain": "off",
+
+    // Chaining is better than nested operators.
+    "lodash/chaining": [2, "always"],
+
+    // Imports are default member-based, so this is convenient.
+    "lodash/import-scope": [2, "member"]
+  }
 }
