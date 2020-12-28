@@ -1,8 +1,8 @@
 import { times } from "lodash";
 
-import { findMinimalIndex } from "../../../array/boundaries/search/findMinimalIndex";
-import { arrayHasUnequalElements } from "../../../array/equality/arrayHasUnequalElements";
-import { calculateArrayProduct } from "../../../array/product/calculateArrayProduct";
+import { findMinimalIndex } from "../../../collection/boundaries/search/findMinimalIndex";
+import { arrayHasUnequalElements } from "../../../collection/equality/arrayHasUnequalElements";
+import { calculateArrayProduct } from "../../../collection/product/calculateArrayProduct";
 
 /**
  * Given an array of integers, find the least common multiple. The LCM is the

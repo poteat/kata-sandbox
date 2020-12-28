@@ -1,6 +1,6 @@
 import { chain, isInteger } from "lodash";
 
-import { isOdd } from "../../utility/number/parity/isOdd";
+import { isOdd } from "../../utility/number/parity/checks/isOdd";
 
 /**
  * Given a list of numbers, find the first instance of an integer which appears

@@ -1,4 +1,4 @@
-import { unique } from "../../../utility/array/uniqueness/unique";
+import { unique } from "../../../utility/collection/uniqueness/unique";
 
 /**
  * Given a string, remove all duplicate words, only leaving the first instance
