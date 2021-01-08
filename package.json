@@ -2,7 +2,7 @@
   "name": "kata-sandbox",
   "private": true,
   "version": "1.2.2",
-  "description": "An npm library for checking deep types via type predicates.",
+  "description": "A repository for Typescript kata problems.",
   "main": "./dist/src/index.js",
   "types": "./dist/src/index.d.ts",
   "scripts": {
@@ -16,22 +16,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/poteat/type-it.git"
+    "url": "git+ssh://git@github.com/poteat/kata-sandbox.git"
   },
   "keywords": [
-    "tuple",
-    "types",
-    "predicate",
-    "runtime",
-    "typescript",
-    "class"
+    "programming", "practice", "type systems", "types", "typescript"
   ],
   "author": "Michael Poteat <me@mpote.at>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/poteat/type-it/issues"
+    "url": "https://github.com/poteat/kata-sandbox/issues"
   },
-  "homepage": "https://github.com/poteat/type-it#readme",
+  "homepage": "https://github.com/poteat/kata-sandbox#readme",
   "devDependencies": {
     "@types/lodash": "^4.14.166",
     "@types/node": "^14.14.16",
