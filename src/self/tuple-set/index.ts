@@ -17,13 +17,7 @@ type Filter<T extends unknown[], N> = T extends []
  * Determine whether any elements matching N exist in the tuple T. If we find
  * one, return early. (short-circuit)
  */
-type Exists<T extends unknown[], N> = T extends []
-  ? false
-  : T extends [infer H, ...infer R]
-  ? H extends N
-    ? true
-    : Exists<R, N>
-  : boolean;
+type Exists<T extends unknown[], E> = E extends T[number] ? true : false;
 
 /**
  * The internal type associated with an instance of a Set.
