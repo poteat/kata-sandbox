@@ -19,7 +19,11 @@
     "url": "git+ssh://git@github.com/poteat/kata-sandbox.git"
   },
   "keywords": [
-    "programming", "practice", "type systems", "types", "typescript"
+    "programming",
+    "practice",
+    "type systems",
+    "types",
+    "typescript"
   ],
   "author": "Michael Poteat <me@mpote.at>",
   "license": "MIT",
