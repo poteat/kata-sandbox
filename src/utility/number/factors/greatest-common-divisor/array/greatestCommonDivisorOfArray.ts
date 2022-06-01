@@ -11,8 +11,11 @@ export function greatestCommonDivisorOfArray(array: number[]) {
     throw new Error(`Cannot calculate the GCD of an empty array.`);
   }
 
-  return array.reduce(
-    (previousGCD, x) => greatestCommonDivisor(previousGCD, x),
-    array[0]
-  );
+  let value = array[0];
+
+  array.forEach((x) => {
+    value = greatestCommonDivisor(value, x);
+  });
+
+  return value;
 }

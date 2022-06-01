@@ -7,7 +7,8 @@ import { chain } from "lodash";
  * @param s String from which to extract an integer.
  */
 export function extractInteger(s: string) {
-  return ((x) => (x ? Number(x[0]) : undefined))(s.match(/\d+/));
+  const matches = s.match(/\d+/);
+  return matches ? Number(matches[0]) : undefined;
 }
 
 /**

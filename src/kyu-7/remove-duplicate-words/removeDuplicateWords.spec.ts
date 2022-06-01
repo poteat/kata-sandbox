@@ -5,5 +5,5 @@ it("Basic test", () => {
     removeDuplicateWords(
       "alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta"
     )
-  ).toStrictEqual("alpha beta gamma delta");
+  ).toBe("alpha beta gamma delta");
 });

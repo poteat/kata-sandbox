@@ -7,7 +7,7 @@ it("Basic test", () => {
       [1, 3],
       [1, 4],
     ])
-  ).toStrictEqual("(6,12)(4,12)(3,12)");
+  ).toBe("(6,12)(4,12)(3,12)");
 
   expect(
     transformFractionsToCommonDenominator([
@@ -17,7 +17,7 @@ it("Basic test", () => {
       [6, 9],
       [7, 10],
     ])
-  ).toStrictEqual("(30,60)(48,60)(45,60)(40,60)(42,60)");
+  ).toBe("(30,60)(48,60)(45,60)(40,60)(42,60)");
 
-  expect(transformFractionsToCommonDenominator([])).toStrictEqual("");
+  expect(transformFractionsToCommonDenominator([])).toBe("");
 });

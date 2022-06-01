@@ -50,7 +50,7 @@ export type Set = {
  * The Set runtime class implementation, devoid of higher-level types in order
  * to make the runtime code as clear as possible to read.
  */
-const Set = (class {
+const Set = class {
   private set: number[] = [];
 
   public insert(x: number) {
@@ -64,14 +64,13 @@ const Set = (class {
   }
 
   public has(x: number) {
-    this.set.includes(x);
-    return this;
+    return this.set.includes(x);
   }
 
   public value() {
     return [...this.set];
   }
-} as unknown) as Set;
+} as unknown as Set;
 
 /**
  * --------------------------------------------------------------------------

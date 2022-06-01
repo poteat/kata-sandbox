@@ -1,17 +1,27 @@
-type M = { v: number; out: number[] };
-
 export function parse(data: string): number[] {
-  return data
-    .split("")
+  let v = 0;
+  const ret: number[] = [];
+
+  [...data]
     .filter((c) => "idso".includes(c))
-    .reduce<M>(
-      (x, c) =>
-        ({
-          i: ({ v, out }: M) => ({ v: v + 1, out }),
-          d: ({ v, out }: M) => ({ v: v - 1, out }),
-          s: ({ v, out }: M) => ({ v: v * v, out }),
-          o: ({ v, out }: M) => ({ v, out: [...out, v] }),
-        }[c as "i" | "d" | "s" | "o"](x)),
-      { v: 0, out: [] }
-    ).out;
+    .forEach((x) => {
+      switch (x) {
+        case "i":
+          v++;
+          break;
+
+        case "d":
+          v--;
+          break;
+
+        case "s":
+          v *= v;
+          break;
+
+        case "o":
+          ret.push(v);
+          break;
+      }
+    });
+  return ret;
 }

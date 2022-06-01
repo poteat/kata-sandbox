@@ -7,5 +7,5 @@
  */
 export function findMinimalIndex(array: number[]) {
   const min = Math.min(...array);
-  return array.findIndex((x) => x === min);
+  return array.indexOf(min);
 }

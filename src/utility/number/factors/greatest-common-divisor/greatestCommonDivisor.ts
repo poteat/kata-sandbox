@@ -14,8 +14,12 @@ export function greatestCommonDivisor(a: number, b: number) {
     );
   }
 
-  const gcd = (a: number, b: number): number =>
-    ((s) => ((r) => (r ? gcd(s, r) : a))(a > b ? a : b % s))(a > b ? b : a);
+  const gcd = (a: number, b: number): number => {
+    const min = Math.min(a, b);
+    const remainder = a > b ? a : b % min;
+
+    return remainder ? gcd(min, remainder) : a;
+  };
 
   return gcd(a, b);
 }
